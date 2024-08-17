@@ -6,7 +6,8 @@
   "contributors": [
     "Aaron Heckmann <aaron.heckmann+github@gmail.com>",
     "Ciaran Jessup <ciaranj@gmail.com>",
-    "Douglas Christopher Wilson <doug@somethingdoug.com>"  ],
+    "Douglas Christopher Wilson <doug@somethingdoug.com>"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -15,7 +16,8 @@
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

@@ -1,0 +1,21 @@
+/* src/components/Menu.css */
+
+.menu {
+  padding: 20px;
+  max-width: 100%; /* Ensure it can take full width */
+  margin: auto;
+}
+
+.menu-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.menu-item h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.menu-item p {
+  margin: 5px 0;
+}

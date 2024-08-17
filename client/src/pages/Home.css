@@ -1,0 +1,117 @@
+/* src/pages/Home.css */
+.home {
+  padding: 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 50px 20px;
+  border-radius: 10px;
+  height: 400px; /* Adjust height as needed */
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #333;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #555;
+}
+
+/* Featured Dishes Section */
+.featured-dishes {
+  margin: 40px 0;
+}
+
+.featured-dishes h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.dishes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.dish {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  width: 30%;
+  text-align: center;
+}
+
+.dish img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.dish h3 {
+  margin-top: 10px;
+}
+
+.dish p {
+  color: #666;
+}
+
+/* Customer Reviews Section */
+.customer-reviews {
+  margin: 40px 0;
+}
+
+.customer-reviews h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  width: 80%;
+  text-align: center;
+}
+
+.review p {
+  font-style: italic;
+}
+
+.review span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}

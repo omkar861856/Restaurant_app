@@ -1,0 +1,12 @@
+/* src/pages/ReservationPage.css */
+
+.reservation-page {
+  padding: 20px;
+  max-width: 100%; /* Change max-width to ensure it can take full width */
+  margin: auto;
+}
+
+.reservation-page h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}

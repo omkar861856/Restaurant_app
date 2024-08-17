@@ -1,0 +1,12 @@
+/* src/pages/MenuPage.css */
+
+.menu-page {
+  padding: 20px;
+  max-width: 100vw; /* Change max-width to ensure it can take full width */
+  margin: auto;
+}
+
+.menu-page h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
