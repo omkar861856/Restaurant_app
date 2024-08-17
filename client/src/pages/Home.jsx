@@ -11,7 +11,6 @@ import heroImage from '../images/hero.jpg'
 
 const Home = () => (
   <div>
-    <Navbar />
     <main className="home">
       <section className="hero" 
       style={{ backgroundImage: `url(${heroImage})` }}>
@@ -50,8 +49,16 @@ const Home = () => (
             <span>- Nithya</span>
           </div>
           <div className="review">
+            <p>"Simply delicious food that keeps you coming back for more."</p>
+            <span>- Sudeep</span>
+          </div>
+          <div className="review">
             <p>"The best dining experience I've had in a long time."</p>
             <span>- Thalsleem</span>
+          </div>
+          <div className="review">
+            <p>"Exceptional dining experience, from the first bite to the last."</p>
+            <span>- Venkatesh</span>
           </div>
           <div className="review">
             <p>"Excellent atmosphere and delicious meals."</p>
@@ -60,7 +67,6 @@ const Home = () => (
         </div>
       </section>
     </main>
-    <Footer />
   </div>
 );
 

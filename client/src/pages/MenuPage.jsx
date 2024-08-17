@@ -24,12 +24,10 @@ const MenuPage = () => {
 
   return (
     <div>
-      <Navbar />
       <main className="menu-page">
         <h2>Menu</h2>
         <Menu items={menuItems} />
       </main>
-      <Footer />
     </div>
   );
 };

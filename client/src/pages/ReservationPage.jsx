@@ -7,12 +7,10 @@ import './ReservationPage.css';
 
 const ReservationPage = () => (
   <div>
-    <Navbar />
     <main className="reservation-page">
       <h2>Reserve a Table</h2>
       <ReservationForm />
     </main>
-    <Footer />
   </div>
 );
 
