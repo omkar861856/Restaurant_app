@@ -8,7 +8,7 @@ import './App.css';
 
 const App = () => (
   <Router>
-    <div className="app-container"> {/* Apply the app-container class here */}
+    <div className="app-container">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<MenuPage />} />

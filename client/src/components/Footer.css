@@ -8,7 +8,7 @@
   width: 100%; /* Ensure the footer takes full width */
   box-sizing: border-box;
   position: relative;
-  margin-top: auto; /* This can be removed if it conflicts with grid layout */
+  margin-top: auto; 
 }
 
 .footer p {
