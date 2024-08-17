@@ -1,21 +1,93 @@
-/* src/components/Menu.css */
-
 .menu {
   padding: 20px;
-  max-width: 100%; /* Ensure it can take full width */
+  max-width: 1200px;
   margin: auto;
 }
 
+.menu-filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.menu-filters input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.menu-categories {
+  display: flex;
+  gap: 10px;
+}
+
+.menu-categories button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu-categories button.active,
+.menu-categories button:hover {
+  background-color: #555;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
 .menu-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
   border-bottom: 1px solid #ddd;
-  padding: 10px 0;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.menu-item h3 {
+.menu-item:hover {
+  background-color: #f9f9f9;
+}
+
+.item-image {
+  max-width: 150px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-info h3 {
   margin: 0;
-  font-size: 20px;
+  font-size: 22px;
 }
 
-.menu-item p {
+.item-info p {
   margin: 5px 0;
+}
+
+.item-info button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.item-info button:hover {
+  background-color: #0056b3;
 }
