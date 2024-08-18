@@ -1,8 +1,7 @@
 //src/pages/Home.js
-import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import './Home.css';
+import { Link } from 'react-router-dom';
+
 
 // Import images
 import dish1 from '../images/dish1.jpg';
@@ -17,7 +16,7 @@ const Home = () => (
       style={{ backgroundImage: `url(${heroImage})` }}>
         <h1>Welcome to Our Restaurant</h1>
         <p>Discover our delicious menu and book a table.</p>
-        <a href="/reservation" className="cta-button">Book a Table</a>
+        <Link to="/reservation" className="cta-button">Book a Table</Link>
       </section>
 
       <section className="featured-dishes">
