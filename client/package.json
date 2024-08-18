@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "contributors": [
-    "Aaron Heckmann <aaron.heckmann+github@gmail.com>",
-    "Ciaran Jessup <ciaranj@gmail.com>",
-    "Douglas Christopher Wilson <doug@somethingdoug.com>"
+    "Nithya",
+    "Shaik T",
+    "Ajay K"
   ],
   "scripts": {
     "dev": "vite",
