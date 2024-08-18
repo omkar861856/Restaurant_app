@@ -4,8 +4,8 @@
   "main": "index.js",
   "type": "module",
   "contributors": [
-    "Aaron Heckmann <aaron.heckmann+github@gmail.com>",
-    "Ciaran Jessup <ciaranj@gmail.com>"
+    "Venkatesh",
+    "Sudeep"
       ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

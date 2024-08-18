@@ -1,14 +1,14 @@
 // src/components/Navbar.js
-import React from 'react';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => (
   <nav className="navbar">
     <h1 className="navbar-logo">Restaurant App</h1>
     <div className="navbar-links">
-      <a href="/" className="navbar-link">Home</a>
-      <a href="/menu" className="navbar-link">Menu</a>
-      <a href="/reservation" className="navbar-link">Reservation</a>
+      <Link to="/" className="navbar-link">Home</Link>
+      <Link to="/menu" className="navbar-link">Menu</Link>
+      <Link to="/reservation" className="navbar-link">Reservation</Link>      
     </div>
   </nav>
 );
