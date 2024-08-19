@@ -43,7 +43,7 @@ const Menu = ({ items }) => {
               <h3>{item.name}</h3>
               <p>{item.description}</p>
               <p>Rating: {item.rating} ★</p>
-              <p>${item.price}</p>
+              <p>Rs.{item.price}</p>
               <button>Add to Cart</button>
             </div>
           </div>
