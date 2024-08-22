@@ -6,7 +6,7 @@
   "contributors": [
     "Venkatesh",
     "Sudeep"
-      ],
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
@@ -15,7 +15,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
@@ -23,5 +22,6 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
-  }
+  },
+  "description": ""
 }
