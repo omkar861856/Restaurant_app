@@ -1,6 +1,7 @@
 import express from "express";
 import { MongoClient } from "mongodb";
 import "dotenv/config";
+import authRouter from "./routes/authRoutes.js";
 
 const app = express();
 
@@ -30,9 +31,9 @@ async function ConnectDB() {
 await ConnectDB();
 
 // Database Name and collection setup
-const dbName = "Contacts";
+const dbName = "Users";
 const db = client.db(dbName);
-const collection = db.collection("contacts");
+export const collection = db.collection("users");
 
 let menuItems = [
   {
@@ -82,6 +83,9 @@ app.delete('/menu-items/:id', (req, res) => {
   menuItems = menuItems.filter(i => i.id !== req.params.id);
   res.json({ message: "Menu item deleted successfully" });
 });
+
+// Authentication Routes
+app.use('/auth', authRouter);
 
 //callback function to our app for feedback
 app.listen(PORT, () => {
