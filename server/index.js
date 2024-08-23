@@ -1,7 +1,7 @@
 import express from "express";
-import { MongoClient } from "mongodb";
 import "dotenv/config";
 import authRouter from "./routes/authRoutes.js";
+import ConnectDB from "./db/ConnectDb.js";
 
 const app = express();
 
@@ -10,25 +10,7 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
 
-// Connection URL
-const url = process.env.MONGO_URL;
-
-const client = new MongoClient(url);
-
-async function ConnectDB() {
-  try {
-    await client.connect();
-    console.log("✔✔ Connected to the database ✔✔");
-    return client;
-  } catch (error) {
-    if (error instanceof MongoServerError) {
-      console.log(`Error worth logging: ${error}`); // special case for some reason
-    }
-    throw error; // still want to crash
-  }
-}
-
-await ConnectDB();
+const client = await ConnectDB();
 
 // Database Name and collection setup
 const dbName = "Users";
@@ -49,12 +31,16 @@ let menuItems = [
 
 // Create a Menu Item
 app.post('/menu-items', (req, res) => {
-  const newItem = {
-      id: (menuItems.length + 1).toString(),
-      ...req.body
-  };
-  menuItems.push(newItem);
-  res.status(201).json(newItem);
+  try {
+    const newItem = {
+        id: (menuItems.length + 1).toString(),
+        ...req.body
+    };
+    menuItems.push(newItem);
+    res.status(201).send(newItem);
+  } catch (error) {
+    res.status(400).send(error)    
+  }
 });
 
 // Get All Menu Items
