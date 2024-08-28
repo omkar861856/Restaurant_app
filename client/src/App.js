@@ -1,6 +1,6 @@
 import React from 'react';
 import Menu from './components/Menu.js';
-import Cart from './components/Cart.js';
+import Cart from './components/cart.js';
 
 
 const App = () => {
