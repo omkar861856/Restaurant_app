@@ -1,0 +1,26 @@
+/* Additional styles for Order component */
+.order-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .item-image {
+    width: 100px;
+    height: 100px; /* Adjust image size as needed */
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .quantity-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  .quantity-wrapper label {
+    margin-right: 5px;
+  }
+  
+  /* Other app-level styles */
+  
