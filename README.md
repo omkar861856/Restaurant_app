@@ -1,5 +1,5 @@
 # Folder structure of server 
-## /
+##
 ├── server/
 ├── controllers/
 ├── node_modules/
